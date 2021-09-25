@@ -864,7 +864,7 @@
 
 
 
-/*map========================================================================*/
+/*contacts========================================================================*/
 .map {
    margin-top: -53px;
    margin-bottom: 50px;
@@ -1050,8 +1050,154 @@
       transition: all .2s linear;
    }
 
-   
+}
 
+
+
+
+/*blog==================================================================================*/
+.blog {
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 30px;
+      margin-top: 60px;
+   }
+}
+
+.aside {
+   max-width: 350px;
+
+   &__search {
+      position: relative;
+   }
+
+   &__search-input {
+      position: absolute;
+      width: 100%;
+      padding: 8px 46px 8px 8px;
+      border-radius: 50px;
+      border: 2px solid $title;
+
+      &::placeholder {
+         font-family: 'Open Sans', sans-serif;
+         font-weight: 400;
+         color: #A1A1A1;
+         font-size: 14px;
+         line-height: 28px;
+      }
+   }
+
+   &__search-btn {
+      position: absolute;
+      right: 18px;
+      top: 12px;
+      border: none;
+      background: transparent;
+      width: 25px;
+      height: 25px;
+      padding: 0;
+
+      & img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+}
+
+.blog__category {
+
+   &-title{
+      margin-top: 84px;
+      @extend %title-font;
+      color: $title;
+      line-height: 23px;
+      margin-bottom: 14px;
+   }
+
+   &-item {
+      margin-bottom: 12px;
+   }
+
+   &-link{
+      color: $default;
+   }
+}
+
+.recent-posts {
+   margin-bottom: 50px;
+
+   &__title {
+      @extend %title-font;
+      color: $title;
+      line-height: 23px;
+      margin-top: 35px;
+      margin-bottom: 24px;
+   }
+
+   &__item {
+      margin-bottom: 10px;
+   }
+
+   &__item span {
+      color:#A1A1A1;
+   }
+
+   &__link {
+      color: $default;
+      display: block;
+   }
+
+   &__author {
+      color:#A1A1A1;
+   }
+}
+
+.blog__tags{
+   margin-bottom: 60px;
+
+   &-title {
+      @extend %title-font;
+      color: $title;
+      line-height: 23px;
+      margin-top: 35px;
+      margin-bottom: 8px;
+   }
+
+   &-link{
+      display: inline-block;
+      font-size: 14px;
+      line-height: 28px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      color: #8F8D8D;
+      border: 1px solid rgba(#8F8D8D, .8);
+      border-radius: 50px;
+      padding: 4px 14px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+   }
+
+}
+
+.blog__social {
+   display: flex;
+   margin-bottom: 60px;
+
+   &-item {
+      margin-right: 20px;
+   }
+
+   &-link {
+      height: 20px;
+      width: 20px;
+      padding: 0;
+
+      & img {
+         width: 100%;
+         height: 100%;
+      }
+   }
 }
 
 
