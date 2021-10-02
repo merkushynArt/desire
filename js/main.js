@@ -13,7 +13,17 @@ $(function () {
       autoplay: true,
    });
 
-   $('.contacts-slider').slick({
+   $('.article-slider__box').slick({
+      prevArrow: '<button type="button" class="slick-prev"><img src="images/prev.svg" alt="arrow-left"></button>',
+      nextArrow: '<button type="button" class="slick-next"><img src="images/next.svg" alt="arrow-right"></button>',
+      fade: true,
+      speed: 500,
+      cssEase: 'linear',
+      infinite: true,
+      autoplay: true
+   });
+
+   $('.article-slider__box').slick({
       slidesToShow: 10,
       slidesToScroll: 10,
       arrows: false, 
