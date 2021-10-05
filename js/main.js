@@ -23,7 +23,7 @@ $(function () {
       autoplay: true
    });
 
-   $('.article-slider__box').slick({
+   $('.contacts-slider').slick({
       slidesToShow: 10,
       slidesToScroll: 10,
       arrows: false, 
