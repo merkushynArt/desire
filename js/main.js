@@ -5,6 +5,9 @@ $(function () {
    $('.rightside-menu__close').on('click', function() {
       $('.rightside-menu').addClass('rightside-menu--close');
    });
+   $('.header__btn-mobile').on('click', function() {
+      $('.mobile-menu,.header__btn-mobile').toggleClass('active');
+   });
 
    $('.top__slider').slick({
       arrows: false, 
