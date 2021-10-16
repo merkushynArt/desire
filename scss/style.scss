@@ -164,11 +164,12 @@
    }
 }
 
+/*breadcrumbs===========================================================================================*/
 .breadcrumbs {
    background: rgba(#DFDFDF, .5);
    padding: 13px 14px;
-   z-index: 1000;
    position: relative;
+   z-index: 1;
 
    &__list {
       display: flex;
@@ -771,7 +772,7 @@
       background-position: top center;
       background-size: cover;
       text-align: center;
-      padding: 160px 0;
+      /*padding: 160px 0;*/
       margin-top: -53px;
    }
 
@@ -780,6 +781,7 @@
       color: $title;
       font-size: 60px;
       line-height: 80px;
+      padding: 160px 0;
    }
 
    &__content {
@@ -831,12 +833,14 @@
 }
 
 .inspiration{
-   padding-top: 100px;
+   margin-top: 70px;
+   padding-top: 50px;
+   padding-bottom: 50px;
    position: relative;
 
    &::after {
       content: '';
-      height: 363px;
+      height: 100%;
       position: absolute;
       bottom: 0;
       left: 0;
