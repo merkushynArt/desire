@@ -256,7 +256,24 @@
       &__item {
          width: 30%;
       }
-      
+   }
+
+   .blog {
+
+      &__inner {
+         margin-top: 20px;
+         margin-left: 0;
+      }
+
+      &__items {
+         width: 100%;
+      }
+
+      .aside {
+         display: none;
+      }
+
+
    }
 }
 
@@ -401,6 +418,23 @@
          line-height: 36px;
       }
    }
+
+   .blog {
+      &__item-title {
+         font-size: 20px;
+         line-height: 26px;
+      }
+
+      &__blockquote {
+         padding: 10px;
+         font-size: 20px;
+         line-height: 26px;
+      }
+
+      &__blockquote-author {
+         padding-top: 24px;
+      }
+   }
 }
 
 @media(max-width: 426px){
@@ -489,5 +523,10 @@
          font-size: 36px;
          padding: 70px 0;
       }
+   }
+
+   .gallery.gallery-page .gallery__item:nth-child(8) {
+      grid-column: span 1;
+         grid-row: span 1;
    }
 }

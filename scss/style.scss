@@ -561,13 +561,15 @@
    }
 
    &.gallery-page {
+
       .gallery__item:nth-child(8) {
          grid-column: span 2;
          grid-row: span 2;
       }
 
       .gallery__item:nth-child(8) img {
-         height: 1150px;
+         /*height: 1150px;*/
+         height: 100%;
       }
    }
 }
@@ -1130,7 +1132,7 @@
    }
 
    &__items {
-      max-width: 750px;
+      width: 60%;
    }
 
    &__item {
@@ -1557,9 +1559,8 @@
 
 /*aside===============================================================================*/
 .aside {
-   max-width: 350px;
-   min-width: 350px;
-   margin-left: 15px;
+   width: 40%;
+   padding-left: 15px;
 
    &__search {
       position: relative;
