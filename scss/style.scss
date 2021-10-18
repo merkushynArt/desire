@@ -199,7 +199,7 @@
 
    &__inner {
       position: relative;
-      padding-bottom: 70px;
+      padding-bottom: 0px;
 
       &::before {
          content: '';
@@ -261,31 +261,32 @@
    &__slider-text {
       max-width: 585px;
    }
-   
-   .slick-dots {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 70px 0 0;
 
-      li{
-         padding: 0 15px;
+}
 
-         &.slick-active {
-            button {
-               background: #FFEF35;
-            }
+.slick-dots {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 50px 0 !important;
+
+   li{
+      padding: 0 15px;
+
+      &.slick-active {
+         button {
+            background: #FFEF35;
          }
       }
-      button {
-         background-color: $title;
-         width: 12px;
-         height: 12px;
-         border-radius: 50%;
-         padding: 0;
-         font-size: 0;
-         border: none;
-      }
+   }
+   button {
+      background-color: $title;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      padding: 0;
+      font-size: 0;
+      border: none;
    }
 }
 
@@ -931,6 +932,7 @@
 .map {
    margin-top: -53px;
    margin-bottom: 50px;
+   height: 30vh;
 }
 
 .contacts {
@@ -1047,6 +1049,7 @@
 }
 
 .contacts {
+   
 
    .slick-dots {
       display: flex;
@@ -1070,6 +1073,7 @@
          background: $title;
       }
    }
+   
 }
 
 
@@ -1081,7 +1085,9 @@
 .contacts-slider {
    &__item {
       position: relative;
-      margin: 0 10px;
+      /*margin: 0 10px;*/
+      width: 90% !important;
+      height: 100%;
    }
 
    &__item:hover {
@@ -1092,8 +1098,8 @@
    }
 
    &__img {
-      width: 170px;
-      height: 170px;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
    }
 
@@ -1103,8 +1109,10 @@
       right: 0;
       bottom: 0;
       top: 0;
+      width: 100%;
+      height: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       background: rgba(#FFFFFF, 0);
       color: $title;
@@ -1319,6 +1327,7 @@
 
    &__tags-links {
       display: flex;
+      flex-wrap: wrap;
       margin-bottom: 30px;
    }
 
@@ -1327,7 +1336,7 @@
       line-height: 28px;
       border: 1px solid #8F8D8D;
       border-radius: 50px;
-      margin-left: 20px;
+      margin-left: 10px;
       color: #8F8D8D;
       padding: 0 20px;
       margin-bottom: 10px;

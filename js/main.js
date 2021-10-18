@@ -30,7 +30,37 @@ $(function () {
       slidesToShow: 10,
       slidesToScroll: 10,
       arrows: false, 
-      dots: true
+      dots: true,
+      responsive: [
+         {
+            breakpoint: 1900,
+            settings: {
+               slidesToShow: 9,
+               slidesToScroll: 9,
+            }
+         },
+         {
+            breakpoint: 1440,
+            settings: {
+               slidesToShow: 7,
+               slidesToScroll: 7,
+            }
+         },
+         {
+            breakpoint: 1024,
+            settings: {
+               slidesToShow: 4,
+               slidesToScroll: 4,
+            }
+         },
+         {
+            breakpoint: 550,
+            settings: {
+               slidesToShow: 3,
+               slidesToScroll: 3,
+            }
+         },
+      ]
    });
 
    var mixer = mixitup('.gallery__inner', {
